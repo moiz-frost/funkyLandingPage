@@ -1,1 +1,1 @@
-<?php include_once("thetheme.io/thesaas/index.html"); ?>
+<?php include_once("thesaas/index.html"); ?>
