@@ -15,7 +15,7 @@ module.exports = {
 
   session: {
     adapter: 'connect-mongo',
-    url: process.env.MONGODB_URI
+    url: 'mongodb://admin:luckisnotalie@ds151702.mlab.com:51702/heroku_7dspb97x'
   }
 
   /***************************************************************************
