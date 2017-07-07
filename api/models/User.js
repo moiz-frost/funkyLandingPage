@@ -1,20 +1,30 @@
-/*---------------------
-	:: User
-	-> model
----------------------*/
+/**
+ * User.js
+ *
+ * @description :: TODO: You might write a short summary of how this model works and what it represents here.
+ * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
+ */
+
 module.exports = {
 
-	attributes	: {
+  attributes: {
 
-		// Simple attribute:
-		// name: 'STRING',
+    id: {
+      type: 'integer',
+      autoIncrement: true,
+      primaryKey: true
+    },
 
-		// Or for more flexibility:
-		// phoneNumber: {
-		//	type: 'STRING',
-		//	defaultValue: '555-555-5555'
-		// }
-		
-	}
+    email: {
+      type: 'string',
+      size: 300
+    },
 
+    ip: {
+      type: 'string',
+      size: 300
+    }
+
+  }
 };
+
