@@ -15,30 +15,31 @@ module.exports = {
 
   session: {
     adapter: 'connect-mongo',
-    url: 'mongodb://admin:luckisnotalie@ds151702.mlab.com:51702/heroku_7dspb97x'
-  }
+    url: MONGODB_URI
+    // url: 'mongodb://admin:luckisnotalie@ds151702.mlab.com:51702/heroku_7dspb97x'
+  },
 
   /***************************************************************************
    * Set the default database connection for models in the production        *
    * environment (see config/connections.js and config/models.js )           *
    ***************************************************************************/
 
-  // models: {
-  //   connection: 'someMysqlServer'
-  // },
+  models: {
+    connection: 'productionMongo'
+  },
 
   /***************************************************************************
    * Set the port in the production environment to 80                        *
    ***************************************************************************/
 
-  // port: 80,
+  port: 80,
 
   /***************************************************************************
    * Set the log level in production environment to "silent"                 *
    ***************************************************************************/
 
-  // log: {
-  //   level: "silent"
-  // }
+  log: {
+    level: "silent"
+  }
 
 };

@@ -25,7 +25,6 @@ module.exports = {
       size: 300
     },
 
-    schema: true
   }
 };
 
