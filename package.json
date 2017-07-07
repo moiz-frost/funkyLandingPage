@@ -1,10 +1,17 @@
 {
-    "name": "heroku-sails",
-    "version": "0.0.1",
-    "description": "a Sails application running on Heroku",
+    "name": "funkyBackend",
+    "version": "0.0.0",
+    "description": "funkyBackend",
     "main": ".app.js",
     "dependencies": {
-        "sails": "0.8.895"
+        "connect-mongo": "^1.3.2",
+        "ejs": "^2.5.6",
+        "include-all": "^1.0.0",
+        "rc": "1.0.1",
+        "sails": "~0.12.13",
+        "sails-disk": "^0.10.10",
+        "sails-hook-mongo-auto-index": "^0.1.3",
+        "sails-mongo": "^0.12.2"
     },
     "scripts": {
         "start": "node .app.js",
@@ -15,7 +22,7 @@
     },
     "repository": {
       "type": "git",
-      "url": "git://github.com/chadn/heroku-sails.git"
+      "url": "git://github.com/ams/funky Backend.git"
     },
     "author": "Chad Norwood <chad@chadnorwood.com>",
     "license": "MIT"
