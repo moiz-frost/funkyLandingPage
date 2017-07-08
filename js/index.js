@@ -1,10 +1,20 @@
 window.onload = function () {
 
-    var userForm = document.getElementById('userdata');
+	console.log = function(){};
+
+	var userForm = document.getElementById('userdata');
     userForm.onsubmit = function (e) {
         e.preventDefault();
         var userEmail = userForm.email.value;
         userForm.reset();
+        postUserData(userEmail);
+    };
+
+    var userForm2 = document.getElementById('userdata2');
+    userForm2.onsubmit = function (e) {
+        e.preventDefault();
+        var userEmail = userForm2.email.value;
+        userForm2.reset();
         postUserData(userEmail);
     };
 
@@ -23,5 +33,8 @@ window.onload = function () {
 
         http.send();
     };
+};
+
+var onClick = function () {
 
 };
