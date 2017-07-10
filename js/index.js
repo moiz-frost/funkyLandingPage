@@ -15,6 +15,7 @@ window.onload = function () {
         e.preventDefault();
         var userEmail = userForm2.email.value;
         userForm2.reset();
+        // $("#myModal").modal('show');
         postUserData(userEmail);
     };
 
@@ -27,12 +28,24 @@ window.onload = function () {
             // console.log(http.response);
         }
 
+        // http.onreadystatechange = function() {
+        //     if (http.readyState === 4) {
+        //         var response = JSON.parse(http.responseText);
+        //         if (http.status === 200 && response.status === 'OK') {
+        //             console.log('successful');
+        //         } else {
+        //             console.log('failed');
+        //         }
+        //     }
+        //     }
+
         http.open('POST',
             'https://woxcutapi.herokuapp.com/user/create?email=' + email + '&ip=192.168.1.1',
             true);
 
         http.send();
     };
+        
 };
 
 var onClick = function () {
