@@ -58,15 +58,35 @@
         </div>
 
         <div id="second">
-          <h1 class="header center teal-text text-darken-3">TODO</h1>
+
+          <div class="row center">
+            <img src="assets/woxcut.png" alt="Smiley face" width="600px" height="150px">
+          </div>
 
           <div class="row center">
             <h1 class="header center teal-text text-darken-3">Video Content</h1>
           </div>
 
-          <div class="row center">
-            <a class="btn-large waves-effect waves-light teal lighten-1">Get Early Access</a>
+          <div id="emailForm">
+            <div class="row center">
+              <div class="col s12">
+                <div class="input-field col s6 offset-s3">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row center">
+              <a onclick="emailSubmit();" class="btn-large waves-effect waves-light teal lighten-1">Get Early Access</a>
+            </div>
           </div>
+
+          <div id="afterEmailForm">
+            <h3 class="header center light-green-text text-accent-4">Thank You!</h1>
+          </div>
+
+
         </div>
 
 
@@ -76,7 +96,7 @@
   </div>
 
   <!--  Scripts-->
-  <script src="js/jquery.particleground.min.js"></script>
+  <!-- <script src="js/jquery.particleground.min.js"></script> -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>

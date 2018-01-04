@@ -2,9 +2,12 @@ $(document).ready(function(){
     $(".button-collapse").sideNav();
     $(".parallax").parallax();
     $("select").material_select();
-    $("#profit").html("Please Enter Amount");
+    $("#amount").val("50000");
+    updateProfit();
 
-    $('#particlejs').particleground();
+    // $("#profit").html("Please Enter Amount");
+
+    // $('#particlejs').particleground();
 
   	$("#amount").keyup(function(event) {
   		updateProfit();
@@ -28,11 +31,24 @@ function updateProfit(){
 }
 
 function transition(){
-	$('#first').fadeOut("slow", function(){
+	$("#first").fadeOut("slow", function(){
 	    $("#second").show().fadeIn("slow", function(){
 	    	$("html, body").animate({ 
 	    		scrollTop: 0 
 	    	}, "slow");
 	    });
+	});
+}
+
+function emailSubmit(){
+	var email = $("#email").val();
+  $.post("https://woxcutapi.herokuapp.com/user",
+  				{
+  					email: email
+  				},
+  				function(result){
+  				});
+	$("#emailForm").fadeOut("slow", function(){
+		$("#afterEmailForm").show().fadeIn("slow", function(){});
 	});
 }

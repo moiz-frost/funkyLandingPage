@@ -65,6 +65,10 @@ footer.page-footer {
   display: none;
 }
 
+#afterEmailForm {
+  display: none;
+}
+
 #particlejs {
   position:fixed;
   top:0;
