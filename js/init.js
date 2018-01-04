@@ -26,7 +26,7 @@ function updateProfit(){
 		return;
 	}
 	var profit = amount * profitFactor;
-	$("#profit").html("$ " + profit);
+	$("#profit").html("PKR " + profit);
 }
 
 function transition(){
