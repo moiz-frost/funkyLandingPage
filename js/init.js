@@ -1,10 +1,10 @@
-(function($){
-  $(function(){
-
+$(document).ready(function(){
     $(".button-collapse").sideNav();
     $(".parallax").parallax();
     $("select").material_select();
     $("#profit").html("Please Enter Amount");
+
+    $('#particlejs').particleground();
 
   	$("#amount").keyup(function(event) {
   		updateProfit();
@@ -13,9 +13,7 @@
 		$("#currency").change(function(){
   		updateProfit();
 		});
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+}); // end of jQuery name space
 
 
 function updateProfit(){
