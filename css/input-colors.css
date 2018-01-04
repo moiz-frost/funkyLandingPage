@@ -1,0 +1,74 @@
+/* label color */
+  /*.input-field label {
+   color: #000;
+  }*/
+/* label focus color */
+.input-field input[type=number]:focus + label {
+ color: #000;
+}
+/* label underline focus color */
+.input-field input[type=number]:focus {
+ border-bottom: 1px solid #000;
+ box-shadow: 0 1px 0 0 #000;
+}
+/* valid color *//*
+.input-field input[type=number].valid {
+ border-bottom: 1px solid #9e9e9e;
+ box-shadow: 0 1px 0 0 #9e9e9e;
+}*/
+/* invalid color */
+.input-field input[type=number].invalid {
+ border-bottom: 1px solid #000;
+ box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+ color: #000;
+}
+      
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000;
+    opacity: 0.5; /* Firefox */
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+     text-align: center;
+     background-color: transparent;
+     border-style: none;
+    /*opacity: 1;*/
+     margin: auto; 
+}
+ 
+input[type="number"] {
+    -moz-appearance: textfield;
+     text-align: center;
+     background-color: transparent;
+     border-style: none;
+} 
+
+input, select, textarea{
+  color: #4db6ac;
+  text-align: center;
+}
+
+textarea:focus, input:focus {
+  color: #4db6ac;
+  text-align: center;
+}
