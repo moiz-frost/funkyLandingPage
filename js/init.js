@@ -2,10 +2,10 @@ $(document).ready(function(){
     $(".button-collapse").sideNav();
     $(".parallax").parallax();
     $("select").material_select();
-    $("#amount").val("50000");
-    updateProfit();
+    // $("#amount").val("50000");
+    // updateProfit();
 
-    // $("#profit").html("Please Enter Amount");
+    $("#profit").html("No Profit");
 
     // $('#particlejs').particleground();
 
@@ -23,7 +23,7 @@ function updateProfit(){
 	var profitFactor = parseInt($('#currency :selected').val());
 	var amount = parseInt($("#amount").val());
 	if(!amount){
-		$("#profit").html("Please Enter Amount");
+		$("#profit").html("No Profit");
 		return;
 	}
 	var profit = amount * profitFactor;
